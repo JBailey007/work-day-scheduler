@@ -21,7 +21,7 @@ This data will be saved to your local storage so that you can come back and use 
 N/A
 
 # Screenshot
-![Screenshot of Website for Developer Portfolio](<Screenshot 2023-06-26 151805.png>)
+![Screenshot of Workday Planner Web Application](<Screenshot 2023-07-19 170507.png>)
 
 ## License
 Please refer to the LICENSE in the repo. 
