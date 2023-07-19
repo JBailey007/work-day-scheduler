@@ -9,7 +9,7 @@ When the item is in the future it will be highlighted green.
 
 ## Installation
 
-You can access this page using the following link. ()
+You can access this page using the following link. (https://jbailey007.github.io/work-day-scheduler/)
 
 ## Usage
 At the top of the page you can see the current date and time that is updating each second. 
