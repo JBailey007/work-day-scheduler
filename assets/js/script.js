@@ -7,7 +7,6 @@ var currentHour = dayjs().format('HH');
 //function to run the time on the load of the page once the document is ready.
 $(document).ready(function () {
     $('#display-time').text(today.format('dddd, MMMM D, YYYY h:mm:ss A'));
-console.log(currentHour);
 function Time(){
     var today = dayjs();
 $('#display-time').text(today.format('dddd, MMMM D, YYYY h:mm:ss A'));
@@ -16,16 +15,15 @@ setInterval(Time, 1000);
 });
 
 // function to run through each div and assign a class to each of them based on the time. 
-$(".time-div").each(function () {
-    var timeDiv = $(this).attr("id").split("-")[1];
+$(".time").each(function () {
+    var timeContainer = $(this).attr("id").split("-")[1];
     
-    if (currentHour == timeDiv) {
+    if (currentHour == timeContainer) {
       $(this).addClass("present");
-      $(this).children(".description").addClass("white-text");
-    } else if (currentHour < timeDiv) {
+    } else if (currentHour < timeContainer) {
       $(this).removeClass("present");
       $(this).addClass("future");
-    } else if (currentHour > timeDiv) {
+    } else if (currentHour > timeContainer) {
       $(this).removeClass("future");
       $(this).addClass("past");
     }
